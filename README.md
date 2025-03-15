@@ -45,4 +45,3 @@ Temos uma sugestão de design no Figma. Entretanto, fique à vontade para montar
 - Gerenciamento de estado com useState
 
 - Renderização condicional
-
