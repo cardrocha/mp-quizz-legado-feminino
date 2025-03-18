@@ -15,14 +15,14 @@ export function Quiz() {
       {finishQuiz ? (
         <div className="max-w-lg bg-background min-h-[745px] mx-auto flex flex-col gap-8 py-11 px-6 items-center justify-start rounded-3xl border-8 border-stone-800">
           <SVGImage />
-          <div className="flex flex-col gap-8 items-center w-[470px] p-6">
-            <h1 className="text-foreground text-xl font-semibold">Parabéns!</h1>
+          <div className="flex flex-col gap-8 items-center w-full md:w-[470px] p-6">
+            <h1 className="text-foreground text-3xl font-bold">Parabéns!</h1>
             <h2 className="text-foreground text-2xl text-center">Você concluiu o quiz com sucesso!</h2>
-            <p className="text-verde-2 text-xl">Acertou {correctCount} resposta(s)</p>
-            <p className="text-red-400 text-xl">Errou {incorrectCount} resposta(s)</p>
+            <p className="text-verde-2 text-xl text-center font-semibold">Acertou {correctCount} resposta(s)</p>
+            <p className="text-red-400 text-xl text-center font-semibold">Errou {incorrectCount} resposta(s)</p>
           </div>
-          <a className="flex justify-center gap-2.5 bg-verde-2 text-background py-2 px-6 w-[410px] text-xl text-center font-medium rounded-md cursor-pointer hover:brightness-110" href="/">Voltar ao inicio</a>
-          <a href="/quiz" className="flex justify-center gap-2.5 bg-rosa text-background py-2 px-6 w-[410px] text-xl text-center font-medium rounded-md cursor-pointer hover:brightness-110">Jorgar Novamente</a>
+          <a className="flex justify-center gap-2.5 bg-verde-2 text-background py-2 px-6 w-full md:w-[410px] text-xl text-center font-medium rounded-md cursor-pointer hover:brightness-110" href="/">Voltar ao inicio</a>
+          <a href="/quiz" className="flex justify-center gap-2.5 bg-rosa text-background py-2 px-6 w-full md:w-[410px] text-xl text-center font-medium rounded-md cursor-pointer hover:brightness-110">Jorgar Novamente</a>
           <ModeToggle />
         </div>
       ) : (

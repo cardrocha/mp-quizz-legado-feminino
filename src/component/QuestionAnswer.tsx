@@ -96,7 +96,7 @@ export function QuestionAnswer({ count, setCount, setCorrectCount, setIncorrectC
 
       {selectedAnswer && (
         <span
-          className={`mt-4 py-3 px-6 text-xl w-[410px] text-center font-medium rounded-md ${
+          className={`mt-4 py-3 px-6 text-xl w-full md:w-[410px] text-center font-medium rounded-md ${
             selectedAnswer === correctAnswer?.contribuicao ? "bg-verde" : "bg-red-500"
           }`}
         >
@@ -108,13 +108,13 @@ export function QuestionAnswer({ count, setCount, setCorrectCount, setIncorrectC
         <button
           type="button"
           onClick={nextQuestion}
-          className="mt-4 flex items-center justify-center gap-2.5 bg-rosa py-2 px-6 w-[410px] text-xl text-center font-medium rounded-md cursor-pointer hover:brightness-110"
+          className="mt-4 flex items-center justify-center gap-2.5 bg-rosa py-2 px-6 w-full md:w-[410px] text-xl text-center font-medium rounded-md cursor-pointer hover:brightness-110"
         >
           Próxima Pergunta
           <ArrowRightIcon />
         </button>
       )}
-      <a className="flex justify-center gap-2.5 bg-verde-2 text-background py-2 px-6 w-[410px] text-xl text-center font-medium rounded-md cursor-pointer hover:brightness-110" href="/">Sair</a>
+      <a className="flex justify-center gap-2.5 bg-verde-2 text-background py-2 px-6 w-full md:w-[410px] text-xl text-center font-medium rounded-md cursor-pointer hover:brightness-110" href="/">Sair</a>
     </>
   );
 }
