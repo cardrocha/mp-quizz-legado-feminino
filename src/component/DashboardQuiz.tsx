@@ -26,11 +26,11 @@ export function Quiz() {
           <ModeToggle />
         </div>
       ) : (
-        <div className="max-w-lg bg-background min-h-[745px] mx-auto flex flex-col gap-8 py-11 px-6 items-center justify-start rounded-3xl border-8 border-stone-800">
+        <div className="max-w-lg bg-background min-h-[745px] mx-auto flex flex-col gap-8 py-11 p-3 md:px-6 items-center justify-start rounded-3xl border-8 border-stone-800">
           <SVGImage />
-          <div className="flex flex-col gap-8 items-center w-[470px] p-6">
-            <h1 className="text-foreground text-xl font-semibold">Pergunta {count} de 5</h1>
-            <h2 className="text-foreground text-2xl text-center">Qual alternativa descreve essa informação?</h2>
+          <div className="flex flex-col gap-8 items-center w-full md:w-[470px]">
+            <h2 className="text-foreground text-xl font-semibold">Pergunta {count} de 5</h2>
+            <h3 className="text-foreground text-2xl text-center">Qual alternativa descreve essa informação?</h3>
           </div>
           <QuestionAnswer count={count} setCount={setCount} setCorrectCount={setCorrectCount} setIncorrectCount={setIncorrectCount} />
           <ModeToggle />
