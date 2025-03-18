@@ -2,16 +2,24 @@
 
 @theme {
   --color-background: #000;
-  --color-white: #fff;
+  --color-foreground: #fff;
+  --color-rosa: #E1C8F4;
+  --color-verde: #C8F4D2;
+  --color-verde-2:  #3F7D58;
+  --color-gradient1: #4568DC;
+  --color-gradient2: #B06AB3;   
 }
 
 .dark {
   --color-background: #fff;
-  --color-white: #000;
+  --color-foreground: #000;
+  --color-rosa:  #B085D6;
+  --color-verde:  #74C69D;
+  --color-verde-2: #1F7D53;
 }
 
 @theme {
-  --font-roboto: "Roboto", sans;
+  --font-roboto: "inter", sans;
   --font-oxanium: "Oxanium", sans;
 }
 
